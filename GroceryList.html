@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="GroceryList.css">
+    <script src="GroceryList.js"></script>
+  </head>
+
+  <body>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="float: right;">Ckeck Cart</button>
+
+    <h1>Grocery List</h1>
+
+    <div class="container">
+      <h2>Vegetables</h2>
+      <div class="row row-cols-5">
+        <div class="col ">
+          <img src="images\vegetables\capsicum.jpg" alt="item1">
+          <p>Capsicum</p>
+          <div class="addTolist">
+          <button type="button" id="add" name="add" onclick="addingInList('Capsicum'); return false;">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col ">
+        <img src="images\vegetables\chilli.jpg" alt="item1">
+        <p>Chilli</p>
+        <div class="addTolist">
+          <button type="button" id="add" name="add" onclick="addingInList('Chilli'); return false;">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col ">
+        <img src="images\vegetables\potato.jpg" alt="item1">
+        <p>Potato</p>
+        <div class="addTolist">
+          <button type="button" id="add" name="add" onclick="addingInList('Potato'); return false;">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col ">
+        <img src="images\vegetables\tomato.jpg" alt="item1">
+        <p>Tomato</p>
+        <div class="addTolist">
+          <button type="button" id="add" name="add" onclick="addingInList('Tomato'); return false;">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col ">
+        <img src="images\vegetables\coriander.jpeg" alt="item1">
+        <p>Coriander</p>
+        <div class="addTolist">
+          <button type="button" id="add" name="add" onclick="addingInList('Coriander'); return false;">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Fruits</h2>
+  <div class="row row-cols-5">
+  <div class="col ">
+    <img src="images\fruits\apple.jpg" alt="item1">
+    <p>Apple</p>
+    <div class="addTolist">
+      <button type="button" id="add" name="add" onclick="addingInList('Apple'); return false;">Add to Cart</button>
+    </div>
+  </div>
+  <div class="col ">
+    <img src="images\fruits\apricot.jpg" alt="item1">
+    <p>Apricot</p>
+    <div class="addTolist">
+      <button type="button" id="add" name="add" onclick="addingInList('Apricot'); return false;">Add to Cart</button>
+    </div>
+  </div>
+  <div class="col ">
+    <img src="images\fruits\avocado.jpg" alt="item1">
+    <p>Avocado</p>
+    <div class="addTolist">
+      <button type="button" id="add" name="add" onclick="addingInList('Avocado'); return false;">Add to Cart</button>
+    </div>
+  </div>
+  <div class="col ">
+    <img src="images\fruits\grapes.jpg" alt="item1">
+    <p>Grapes</p>
+    <div class="addTolist">
+      <button type="button" id="add" name="add" onclick="addingInList('Grapes'); return false;">Add to Cart</button>
+    </div>
+  </div>
+  <div class="col ">
+    <img src="images\fruits\mango.jpg" alt="item1">
+    <p>Mango</p>
+    <div class="addTolist">
+      <button type="button" id="add" name="add" onclick="addingInList('Mango'); return false;">Add to Cart</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Added Items</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <ul id="list">
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body{
+  font-family: monospace;
+}
+/* .testing{
+  border : 1px solid black;
+} */
+img{
+  width : 150px;
+  height: 100px;
+  margin-top: 10px;
+}
+h1{
+  text-align: center;
+    /* background-color: aquamarine; */
+}
+#add{
+  background-color: gold;
+  border-radius: 10px;
+}
+p,.addTolist{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  margin-bottom: 25px;
+}
+span.close {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
+#add:hover{
+  background-color: #3e8e41;
+  color: white;
+}
